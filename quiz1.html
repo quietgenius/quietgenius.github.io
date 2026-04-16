@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personality Quiz</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+
+    button {
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Personality Quiz 🧠</h1>
+
+<p>Pick one:</p>
+
+<button onclick="show('logic')">Logic 🧩</button>
+<button onclick="show('creative')">Creativity 🎨</button>
+
+<h2 id="result"></h2>
+
+<script>
+function show(type){
+  if(type === "logic"){
+    document.getElementById("result").innerText =
+    "You are calm, analytical, and strategic.";
+  } else {
+    document.getElementById("result").innerText =
+    "You are imaginative, expressive, and creative.";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -8,16 +8,21 @@
       background: #0f172a;
       color: white;
       text-align: center;
-      padding: 50px;
+      padding: 40px;
     }
 
-    .box {
+    .card {
       background: #1e293b;
       padding: 20px;
-      margin: 20px auto;
+      margin: 15px auto;
       width: 80%;
       max-width: 400px;
       border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      background: #334155;
     }
   </style>
 </head>
@@ -25,10 +30,14 @@
 <body>
 
 <h1>Quiet Genius 🧠</h1>
-<p>My first interactive website is live</p>
+<p>Choose a “thing” to explore</p>
 
-<div class="box">
-  Welcome. More things coming soon.
+<div class="card" onclick="location.href='quiz1.html'">
+  🧠 Personality Quiz
+</div>
+
+<div class="card" onclick="location.href='respiratory.html'">
+  📘 Study Notes (Respiratory System)
 </div>
 
 </body>
